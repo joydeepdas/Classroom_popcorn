@@ -1,0 +1,9 @@
+//defining Main Window theme Color variable
+* {
+   -fx-mainWindowBackgroundColor: #323232;
+   -fx-WhiteColor: white;
+}
+
+.root{
+    -fx-background-color: -fx-mainWindowBackgroundColor;
+}
