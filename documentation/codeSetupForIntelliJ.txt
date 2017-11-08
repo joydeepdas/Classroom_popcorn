@@ -1,0 +1,73 @@
+//Code setup for MockPopcorn project
+
+
+1. Install Sourcetree / Github / Git Bash for code management. 
+
+2. Download and Install Java v1.8 
+    (http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). 	
+	Why 1.8 ? 
+	Because we will be using 1.8 feature like lambda expression, etc which are not supported by lower Java versions.
+
+
+3. Fork and Clone the repository. 
+4. For this new repository, go to settings and add madHEYsia as contributor.
+
+
+5. Download IntelliJ (https://download.jetbrains.com/idea/ideaIU-2017.2.3.exe)
+6. -> Install -> Run -> "Do not import settings" -> 
+   Accept -> Evaluate for Free -> Accept -> "Skip All ..." -> 
+Go to File->Open Project->
+  <RepoName> folder from Cloned/ Downloaded code  and Select. 
+
+
+7. Download and Install MYSQL.
+
+8. 
+Open MYSQL workbench -> "Data Import/ Restore" -> 
+   "Import from Self-contained File" -> Choose dump sql file (src\com\<RepoName>\database\<RepoName>.sql) -> Click on "New..." -> Name it 
+   <RepoName> -> "Start Import".
+
+
+9. Make sure Driver, URL, Name and password are entered correctly according to your system configuration. 
+
+10. You may correct it in src/com/<RepoName>/utils/property.java file.
+
+11. 
+Create New Folder named "out" in <RepoName>/ path where your src folder is present. 
+
+12. It will contain all production byte codes.
+
+
+13. Project SDK, Modules and Library Setup: 
+
+     Go to File -> "Project Structure", then for 
+Project SDK: 
+    "Project" -> "New..." -> "JDK" -> C:\Program Files\Java\jdk1.8.0_131 (Now your 1.8 version is selected for this project). 
+
+14. Below that, Choose Project language level as "SDK default (8 - Lambdaa, etc)".
+
+15. Below that, Choose Project compiler output as "out" folder created at step 9.
+
+
+16. Modules: 
+    Under "Sources" tab, right click on "src" -> "Test Resources". (Right hand side you could see src choosen as Test Resource folder).
+
+
+17. MYSQL Library: "Libraries" -> "+" -> "Java" -> select jar file from src\lib\sql\mysql-connector-java-5.1.41-bin.jar
+FontAwesome Library: 
+     "Libraries" -> "+" -> "Java" -> select jar file from src\lib\fontawesome\fontawesomefx-8.9.jar.
+
+      Press OK.
+
+     On Top Right, 
+    Click on dropdown (just before Run {play} button) and select Edit Confirguration.
+     
+Click "+" -> "Application" -> Give Name, Select Main class 
+      (main class is saved by name main.java, it would automatically search) under Project tab.
+    Press OK.
+
+ Click on Run button. 
+  Application ready for development.
+
+
+If you find any issue at any step add it issues with error screenshot. Thanks
